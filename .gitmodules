@@ -1,0 +1,3 @@
+[submodule "c7-jenkins-slave-swarm/ansible"]
+	path = c7-jenkins-slave-swarm/ansible
+	url = https://github.com/looztra/ansible-for-dockerfiles.git
