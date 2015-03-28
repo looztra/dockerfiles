@@ -25,5 +25,6 @@ This docker image has service discovery enabled on port 5701 without port auto i
 Credits
 =======
 inspired by
+
 * https://registry.hub.docker.com/u/cacciald/hazelcast/
 * https://registry.hub.docker.com/u/hazelcast/hazelcast/
