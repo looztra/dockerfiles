@@ -14,6 +14,10 @@ Environment Variables
 
 `GROUP_PASS`: This variable sets the password for the group of the hazelcast cluster. (Default: devpass)
 
+`MANCENTER_ENABLED`: defaults to false
+
+`MANCENTER_URL`: defaults to http://mancenter:8080/mancenter, override if needed
+
 How to run
 ==========
 
@@ -28,3 +32,4 @@ inspired by
 
 * https://registry.hub.docker.com/u/cacciald/hazelcast/
 * https://registry.hub.docker.com/u/hazelcast/hazelcast/
+* https://registry.hub.docker.com/u/jarias/hazelcast/

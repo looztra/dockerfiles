@@ -2,6 +2,7 @@ FROM java:8
 
 ENV HZ_VERSION 3.4.2
 ENV HZ_HOME /opt/hazelcast
+#
 RUN mkdir -p $HZ_HOME/lib
 WORKDIR $HZ_HOME
 # Download hazelcast jars from maven repo.
