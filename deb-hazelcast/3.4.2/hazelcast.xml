@@ -25,11 +25,12 @@
            xmlns="http://www.hazelcast.com/schema/config"
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <group>
-        <name>GROUP_NAME</name>
-        <password>GROUP_PASS</password>
+        <name>$[group.name}</name>
+        <password>${group.pass}</password>
     </group>
     <management-center enabled="${mancenter.enabled}">${mancenter.url}</management-center>
     <network>
+        <public-address>${public.address}</public-address>
         <port auto-increment="false" port-count="100">5701</port>
         <outbound-ports>
             <!--

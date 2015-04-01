@@ -23,7 +23,7 @@ How to run
 
 This docker image has service discovery enabled on port 5701 without port auto increment
 
-	docker run --rm=true --name hazelcast1 -p 5701:5701 -e "MIN_HEAP=256M" -e "MAX_HEAP=256M" -e "GROUP_NAME=test" -e "GROUP_PASS=test_pass" looztra/deb-hazelcast
+	docker run --rm --name hazelcast1 -p 5701:5701 -e "MIN_HEAP=256M" -e "MAX_HEAP=256M" -e "GROUP_NAME=test" -e "GROUP_PASS=test_pass" looztra/deb-hazelcast
 
 
 Credits
