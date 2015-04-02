@@ -11,7 +11,7 @@ Tools
 
 * openjdk6
 * openjdk7
-* oracle-jdk8
+* openjdk8
 * maven 3.0.5
 * maven 3.1.1
 * maven 3.2.5
