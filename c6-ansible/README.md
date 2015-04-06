@@ -1,3 +1,8 @@
+Status
+======
+
+[![Docker Repository on Quay.io](https://quay.io/repository/looztra/c6-ansible/status "Docker Repository on Quay.io")](https://quay.io/repository/looztra/c6-ansible)
+
 What?
 =====
 
