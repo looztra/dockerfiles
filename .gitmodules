@@ -4,3 +4,6 @@
 [submodule "c7-jenkins-master/ansible"]
 	path = c7-jenkins-master/ansible
 	url = https://github.com/looztra/ansible-for-dockerfiles.git
+[submodule "c6-docker-client/ansible"]
+	path = c6-docker-client/ansible
+	url = https://github.com/looztra/ansible-for-dockerfiles.git
