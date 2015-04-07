@@ -1,4 +1,4 @@
-FROM c6-ansible
+FROM looztra/c6-ansible
 
 # Add playbooks to the Docker image
 ADD ansible /workspace
