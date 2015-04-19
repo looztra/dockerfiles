@@ -18,6 +18,9 @@ Environment Variables
 
 `MANCENTER_URL`: defaults to http://mancenter:8080/mancenter, override if needed
 
+`CLUSTER_MEMBERS`: comma separated list of cluster members (same format as the hazelcast expects i.e. host or host:port). Typically used with docker links.
+
+
 How to run
 ==========
 
@@ -30,6 +33,6 @@ Credits
 =======
 inspired by
 
-* https://registry.hub.docker.com/u/cacciald/hazelcast/
-* https://registry.hub.docker.com/u/hazelcast/hazelcast/
-* https://registry.hub.docker.com/u/jarias/hazelcast/
+* [cacciald/hazelcast](https://registry.hub.docker.com/u/cacciald/hazelcast/)
+* [hazelcast/hazelcast](https://registry.hub.docker.com/u/hazelcast/hazelcast/)
+* [jarias/hazelcast](https://registry.hub.docker.com/u/jarias/hazelcast/)

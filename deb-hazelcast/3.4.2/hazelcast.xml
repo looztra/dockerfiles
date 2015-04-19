@@ -43,7 +43,7 @@
             <multicast enabled="false">
             </multicast>
             <tcp-ip enabled="true">
-                <!-- interface>127.0.0.1</interface -->
+		__CLUSTER_MEMBERS__
             </tcp-ip>
             <aws enabled="false">
             </aws>
