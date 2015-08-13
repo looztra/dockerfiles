@@ -26,10 +26,10 @@ mkdir -p ${SWARM_EXPORTED_VOLUME}/jenkins
 mkdir -p ${SWARM_EXPORTED_VOLUME}/dot_jenkins
 mkdir -p ${SWARM_EXPORTED_VOLUME}/dot_maven
 #
-cd /home/jenkins
+cd /var/jenkins_home
 ln -s ${SWARM_EXPORTED_VOLUME}/dot_jenkins .jenkins
 #
 ln -s ${SWARM_EXPORTED_VOLUME}/dot_maven .m2
 #
-cd /home/jenkins
+cd /var/jenkins_home
 java -jar ${SWARM_JAR} ${PARAMS} -fsroot ${SWARM_EXPORTED_VOLUME}/jenkins -executors ${SWARM_NB_EXECUTORS}
