@@ -15,6 +15,7 @@ VOLUME /var/jenkins_home
 
 
 ENV JENKINS_UC https://updates.jenkins-ci.org
+ENV JENKINS_HOME /var/jenkins_home
 
 # for main web interface:
 EXPOSE 8080
