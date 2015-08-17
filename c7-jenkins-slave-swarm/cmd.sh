@@ -31,5 +31,4 @@ ln -s ${SWARM_EXPORTED_VOLUME}/dot_jenkins .jenkins
 #
 ln -s ${SWARM_EXPORTED_VOLUME}/dot_maven .m2
 #
-cd /var/jenkins_home
 java -jar ${SWARM_JAR} ${PARAMS} -fsroot ${SWARM_EXPORTED_VOLUME}/jenkins -executors ${SWARM_NB_EXECUTORS}
