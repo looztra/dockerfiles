@@ -21,6 +21,7 @@ ADD https://download.go.cd/binaries/16.2.1-3027/deb/go-agent-16.2.1-3027.deb /tm
 WORKDIR /tmp
 RUN dpkg -i /tmp/go-agent.deb && \
     sed -i 's/DAEMON=Y/DAEMON=N/' /etc/default/go-agent && \
-    apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+    apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
+	chmod +x /etc/service/go-agent/run
 
 CMD ["/sbin/my_init"]
