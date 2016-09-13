@@ -1,7 +1,7 @@
 FROM alpine:3.4
 MAINTAINER MAINTAINER Christophe Furmaniak <christophe.furmaniak@gmail.com>
 
-LABEL org.label-schema.name="cwmaven-fury" \
+LABEL org.label-schema.name="maven-fury" \
       org.label-schema.description="jdk 7 and 8 with maven 3.1, 3.2 and 3.3" \
       org.label-schema.vcs-url="https://github.com/looztra/dockerfiles" \
       org.label-schema.schema-version="1.0" \
