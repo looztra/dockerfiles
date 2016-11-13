@@ -36,6 +36,7 @@ if [ $is_running -eq 0 ]; then
 
     # How long to keep backups for
     OLDER_THAN="1M"
+    KEEP_FULL_COUNT=2
 
     # The source of your backup
     SOURCE=/data
@@ -49,7 +50,8 @@ if [ $is_running -eq 0 ]; then
     trace "Backup for local filesystem started"
     trace "... removing old backups"
 
-    duplicity remove-older-than ${OLDER_THAN} ${DEST} >> ${DAILYLOGFILE} 2>&1
+    #duplicity remove-older-than ${OLDER_THAN} ${DEST} >> ${DAILYLOGFILE} 2>&1
+    duplicity remove-all-but-n-full ${KEEP_FULL_COUNT} ${DEST} >> ${DAILYLOGFILE} 2>&1
 
     trace "... backing up filesystem"
 
