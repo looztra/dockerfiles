@@ -1,0 +1,6 @@
+FROM node:7-alpine
+
+RUN addgroup -g 1000 g1000 && \
+    adduser  -G g1000 -u 1000 -D u1000
+
+WORKDIR /home/u1000
