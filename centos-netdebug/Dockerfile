@@ -12,5 +12,5 @@ RUN yum install -y \
 
 ADD whoamI-${WHOAMI_SHA1} /whoamI
 
-ENTRYPOINT ["/whoamI"]
+CMD ["/whoamI"]
 EXPOSE 80
